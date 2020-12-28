@@ -1,0 +1,36 @@
+{
+  "name": "svelte-materialify-jyc-examples",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "cross-env ROLLUP_WATCH=1 && rollup -c -w",
+    "start": "sirv public -s",
+    "gen": "cross-env DEBUG=1 && graphql-codegen",
+    "validate": "svelte-check"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "17.0.0",
+    "@rollup/plugin-node-resolve": "11.0.1",
+    "@rollup/plugin-typescript": "8.1.0",
+    "@tsconfig/svelte": "1.0.10",
+    "cross-env": "7.0.3",
+    "postcss": "^8.2.1",
+    "rollup": "2.35.1",
+    "rollup-plugin-css-only": "3.1.0",
+    "rollup-plugin-livereload": "2.0.0",
+    "rollup-plugin-svelte": "7.0.0",
+    "rollup-plugin-terser": "7.0.2",
+    "sass": "1.30.0",
+    "svelte": "3.31.0",
+    "svelte-check": "1.1.23",
+    "svelte-materialify": "0.3.4",
+    "svelte-preprocess": "4.6.1",
+    "tslib": "2.0.3",
+    "typescript": "4.1.3"
+  },
+  "dependencies": {
+    "sirv-cli": "1.0.10",
+    "svelte-routing": "1.4.2"
+  }
+}
